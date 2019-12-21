@@ -1,55 +1,55 @@
 package com.gamerstore.gamerstoreapp;
 
 public class ListItem {
-    private String diseId;
-    private String diseDescripcion;
-    private String diseProdID;
-    private String diseClienteID;
-    private String diseImagen;
+    private String prodId;
+    private String prodDescripcion;
+    private String prodImagen;
+    private String prodCategoria;
+    private String prodPrecioUnitario;
 
 
-    public String getDiseId() {
-        return diseId;
+    public String getProdIdId() {
+        return prodId;
     }
-    public void setDiseId(String diseId) {
-        this.diseId = diseId;
-    }
-
-
-    public String getDiseDescripcion() {
-        return diseDescripcion;
-    }
-    public void setDiseDescripcion(String diseDescripcion) {
-        this.diseDescripcion = diseDescripcion;
+    public void setProdIdId(String prodId) {
+        this.prodId = prodId;
     }
 
 
-    public String getDiseProdID() {
-        return diseProdID;
+    public String getProdDescripcion() {
+        return prodDescripcion;
     }
-    public void setDiseProdID(String diseProdID) {
-        this.diseProdID = diseProdID;
-    }
-
-
-    public String getDiseClienteID() {
-        return diseClienteID;
-    }
-    public void setDiseClienteID(String diseClienteID) {
-        this.diseClienteID = diseClienteID;
+    public void setProdDescripcion(String prodDescripcion) {
+        this.prodDescripcion = prodDescripcion;
     }
 
 
-    public String getDiseImagen() {
-        return diseImagen;
+    public String getProdImagen() {
+        return prodImagen;
     }
-    public void setDiseImagen(String diseImagen) {
-        this.diseImagen = diseImagen;
+    public void setDiseProdID(String prodImagen) {
+        this.prodImagen = prodImagen;
+    }
+
+
+    public String getProdCategoria() {
+        return prodCategoria;
+    }
+    public void setProdCategoria(String prodCategoria) {
+        this.prodCategoria = prodCategoria;
+    }
+
+
+    public String getProdPreciounitario() {
+        return prodPrecioUnitario;
+    }
+    public void setProdPrecioUnitario (String prodPrecioUnitario) {
+        this.prodPrecioUnitario = prodPrecioUnitario;
     }
 
     @Override
     public String toString() {
-        return "[ Diseño=" + diseId + ", Descripción=" + diseDescripcion + " , Imagen=" + diseImagen + "]";
+        return "[ Diseño=" + prodId + ", Descripción=" + prodDescripcion + " , Imagen=" + prodImagen + "]";
     }
 
 }
