@@ -40,8 +40,12 @@ public class CustomListAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = layoutInflater.inflate(R.layout.list_item, null);
             misdisenios = new ViewDisenio();
-            misdisenios.diseId 		    = (TextView) convertView.findViewById(R.id.id);
-            misdisenios.diseDescripcion	= (TextView) convertView.findViewById(R.id.descripcion);
+            misdisenios.prodId 		    = (TextView) convertView.findViewById(R.id.id);
+            misdisenios.prodDescripcion	= (TextView) convertView.findViewById(R.id.descripcion);
+            misdisenios.prodImagen	= (TextView) convertView.findViewById(R.id.imagen);
+            misdisenios.prodCategoria	= (TextView) convertView.findViewById(R.id.categoria);
+            misdisenios.prodPrecioUnitario	= (TextView) convertView.findViewById(R.id.preciounitario);
+
 
             convertView.setTag(misdisenios);
 
@@ -50,12 +54,11 @@ public class CustomListAdapter extends BaseAdapter {
         }
 
         ListItem newsItem = (ListItem) listData.get(position);
-        misdisenios.diseId.setText(newsItem.getDiseId());
-        misdisenios.diseDescripcion.setText(newsItem.getDiseDescripcion());
-        misdisenios.diseProdID.setText(newsItem.getDiseProdID());
-        misdisenios.diseClienteID.setText(newsItem.getDiseClienteID());
-
-        misdisenios.diseImagen.setText(newsItem.getDiseImagen());
+        misdisenios.prodId.setText(newsItem.getProdId());
+        misdisenios.prodDescripcion.setText(newsItem.getProdDescripcion());
+        misdisenios.prodImagen.setText(newsItem.getProdImagen());
+        misdisenios.prodCategoria.setText(newsItem.getProdCategoria());
+        misdisenios.prodPrecioUnitario.setText(newsItem.getProdPreciounitario());
 
         if (misdisenios.diseFoto != null) {
             new ImageDownloaderTask(misdisenios.diseFoto).execute(newsItem.getDiseImagen());
@@ -64,13 +67,11 @@ public class CustomListAdapter extends BaseAdapter {
     }
 
     static class ViewDisenio {
-        TextView diseId;
-        TextView diseDescripcion;
-        TextView diseProdID;
-        TextView diseClienteID;
-        TextView diseImagen;
-        ImageView diseFoto;
-
+        TextView prodId;
+        TextView prodDescripcion;
+        TextView prodImagen;
+        TextView prodCategoria;
+        TextView prodPrecioUnitario;
 
     }
 
