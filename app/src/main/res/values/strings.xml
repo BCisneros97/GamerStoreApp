@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">GamerStore</string>
     <string name="btn_listar">Ver Diseños</string>
+    <string name="btn_salir">SALIR</string>
+    <string name="slogan">¡La comunidad del Gamer!</string>
 </resources>
