@@ -45,8 +45,6 @@ public class CustomListAdapter extends BaseAdapter {
             misdisenios.prodImagen	= (TextView) convertView.findViewById(R.id.imagen);
             misdisenios.prodCategoria	= (TextView) convertView.findViewById(R.id.categoria);
             misdisenios.prodPrecioUnitario	= (TextView) convertView.findViewById(R.id.preciounitario);
-
-
             convertView.setTag(misdisenios);
 
         } else {
@@ -54,24 +52,23 @@ public class CustomListAdapter extends BaseAdapter {
         }
 
         ListItem newsItem = (ListItem) listData.get(position);
+
         misdisenios.prodId.setText(newsItem.getProdId());
         misdisenios.prodDescripcion.setText(newsItem.getProdDescripcion());
         misdisenios.prodImagen.setText(newsItem.getProdImagen());
         misdisenios.prodCategoria.setText(newsItem.getProdCategoria());
         misdisenios.prodPrecioUnitario.setText(newsItem.getProdPreciounitario());
-
-        if (misdisenios.diseFoto != null) {
-            new ImageDownloaderTask(misdisenios.diseFoto).execute(newsItem.getDiseImagen());
-        }
         return convertView;
     }
 
     static class ViewDisenio {
+
         TextView prodId;
         TextView prodDescripcion;
         TextView prodImagen;
         TextView prodCategoria;
         TextView prodPrecioUnitario;
+
 
     }
 
