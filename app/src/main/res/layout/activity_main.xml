@@ -11,15 +11,15 @@
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/ic_gamer_store_logo"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="35dp"
         android:text="@string/slogan"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:textSize="16sp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:layout_marginBottom="25dp"
         android:textColor="#fff"
         android:layout_gravity="center_horizontal"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:textSize="16sp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="#fff"
         android:layout_gravity="center_horizontal"
         android:text="@string/btn_salir"
