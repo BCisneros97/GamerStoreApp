@@ -42,7 +42,7 @@ public class ListarDiseniosActivity extends ListActivity {
     private static final String TAG_DESCRIPCION = "descripcion";
     private static final String TAG_IMAGEN = "imagen";
     private static final String TAG_PRODNOMBRE = "prodnombre";
-    private static final String TAG_PRODCARACTERISTICA = "prodcaracteristic";
+    private static final String TAG_PRODCARACTERISTICA = "prodcaracteristica";
     private static final String TAG_PRODPRECIOUNITARIO = "prodpreciounitario";
     private static final String TAG_PRODPRECIOENVIOLOCAL = "prodprecioenviolocal";
     private static final String TAG_PRODPRECIOENVIOPROVINCIA = "prodprecioenvioprovincia";

@@ -1,56 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#1f41dc"
+    android:gravity="center_horizontal"
+    android:paddingBottom="25dp"
+    android:paddingTop="25dp"
     android:orientation="vertical">
-
 
     <TextView
         android:id="@+id/id"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        />
 
     <TextView
         android:id="@+id/descripcion"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#000"
-        android:paddingLeft="6dp"
-        android:paddingTop="6dp"
         android:textSize="25sp"
+        android:text="Descripcion"
+        android:textColor="#fd5a00"
         android:textStyle="bold"
-        android:textColor="#fff"
         />
 
-    <ImageView
-        android:id="@+id/foto"
-        android:layout_width="289dp"
-        android:layout_height="406dp"
-        android:padding="5dp"
-        />
     <TextView
         android:id="@+id/categoria"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:background="#000"
-        android:paddingLeft="6dp"
-        android:paddingTop="6dp"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoría"
+        android:textSize="18sp"
         android:textColor="#fff"
         />
 
     <TextView
         android:id="@+id/preciounitario"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:background="#000"
-        android:paddingLeft="6dp"
-        android:paddingTop="6dp"
-        android:textColor="#fff"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
 
 </LinearLayout>
