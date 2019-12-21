@@ -27,6 +27,9 @@ public class ListItem {
     public String getProdImagen() {
         return prodImagen;
     }
+
+
+
     public void setDiseProdID(String prodImagen) {
         this.prodImagen = prodImagen;
     }

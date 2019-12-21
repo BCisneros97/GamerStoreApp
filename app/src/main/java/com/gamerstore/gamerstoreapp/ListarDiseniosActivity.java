@@ -118,9 +118,11 @@ public class ListarDiseniosActivity extends ListActivity {
 
                         String ruta = "http://gamerstoreperu.000webhostapp.com/proyecto/img/" + imagen;
 
-                        newsData.setDiseId(id);
-                        newsData.setDiseDescripcion(descripcion);
-                        newsData.setDiseImagen(ruta);
+                        newsData.setProdIdId(id);
+                        newsData.setProdDescripcion(descripcion);
+                        newsData.setDiseProdID(ruta);
+                        newsData.setProdCategoria("Categoria: "+categoria);
+                        newsData.setProdPrecioUnitario("Precio: S/ "+preciounitario+".00");
                         listMockData.add(newsData);
 
 
