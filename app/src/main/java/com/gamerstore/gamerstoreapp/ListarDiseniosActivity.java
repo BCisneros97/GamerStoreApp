@@ -97,7 +97,7 @@ public class ListarDiseniosActivity extends ListActivity {
                     for (int i = 0; i < misdisenios.length(); i++) {
                         JSONObject c = misdisenios.getJSONObject(i);
 
-<<<<<<< HEAD
+
                         ListItem newsData = new ListItem();
 
                         String id = c.getString(TAG_DID);
@@ -105,10 +105,7 @@ public class ListarDiseniosActivity extends ListActivity {
                         String categoria = c.getString(TAG_CATNOMBRE);
                         String preciounitario = c.getString(TAG_PRODPRECIOUNITARIO);
                         String imagen = c.getString(TAG_IMAGEN);
-=======
-                        String id= c.getString(TAG_DID);
-                        String descripcion= c.getString(TAG_DESCRIPCION);
->>>>>>> 28da8f8bc90e4253ca7cca2f10eede343558500e
+
 
                         HashMap<String, String> map = new HashMap<String, String>();
 
@@ -118,7 +115,7 @@ public class ListarDiseniosActivity extends ListActivity {
                         map.put(TAG_PRODPRECIOUNITARIO, preciounitario);
                         map.put(TAG_IMAGEN, imagen);
 
-<<<<<<< HEAD
+
                         String ruta = "http://gamerstoreperu.000webhostapp.com/proyecto/img/" + imagen;
 
                         newsData.setDiseId(id);
@@ -127,8 +124,6 @@ public class ListarDiseniosActivity extends ListActivity {
                         listMockData.add(newsData);
 
 
-=======
->>>>>>> 28da8f8bc90e4253ca7cca2f10eede343558500e
                         diseniosLista.add(map);
                     }
                 } else {

@@ -37,9 +37,10 @@
         android:background="#000"
         android:paddingLeft="6dp"
         android:paddingTop="6dp"
-        android:textColor="#fff"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
 
     <TextView
         android:id="@+id/preciounitario"
