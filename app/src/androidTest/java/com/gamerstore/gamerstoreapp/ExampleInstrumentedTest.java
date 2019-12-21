@@ -1,4 +1,4 @@
-package com.gamerstore.gamerstore;
+package com.gamerstore.gamerstoreapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.gamerstore.gamerstore", appContext.getPackageName());
+        assertEquals("com.gamerstoreapp.gamerstoreapp", appContext.getPackageName());
     }
 }

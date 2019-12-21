@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">GamerStore</string>
-    <string name="btn_listar">Listar Diseños</string>
+    <string name="btn_listar">Ver Diseños</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.gamerstore.gamerstore;
+package com.gamerstore.gamerstoreapp;
 
 import org.junit.Test;
 

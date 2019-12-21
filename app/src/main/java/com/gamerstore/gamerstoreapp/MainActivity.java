@@ -1,4 +1,4 @@
-package com.gamerstore.gamerstore;
+package com.gamerstore.gamerstoreapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

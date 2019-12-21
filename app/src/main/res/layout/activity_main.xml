@@ -6,20 +6,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimary"
-    tools:context="com.gamerstore.gamerstore.MainActivity">
+    tools:context="com.gamerstore.gamerstoreapp.MainActivity">
 
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/gamer-store-logo"/>
+        android:src="@drawable/ic_gamer_store_logo"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#d74810"
-        android:paddingHorizontal="20dp"
+        android:background="#f3681b"
+        android:textSize="16sp"
+        android:padding="20dp"
         android:textColor="#fff"
         android:layout_gravity="center_horizontal"
         android:text="@string/btn_listar"/>
