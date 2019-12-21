@@ -42,7 +42,12 @@ public class CustomListAdapter extends BaseAdapter {
             misdisenios = new ViewDisenio();
             misdisenios.diseId 		    = (TextView) convertView.findViewById(R.id.id);
             misdisenios.diseDescripcion	= (TextView) convertView.findViewById(R.id.descripcion);
+           /* misdisenios.diseProdID	    = (TextView) convertView.findViewById(R.id.producto_id);
+            misdisenios.diseClienteID	= (TextView) convertView.findViewById(R.id.cliente_id);
 
+            misdisenios.diseImagen 	    = (TextView) convertView.findViewById(R.id.imagen);
+            misdisenios.diseFoto 	   = (ImageView) convertView.findViewById(R.id.foto);
+*/
             convertView.setTag(misdisenios);
 
         } else {
@@ -52,25 +57,25 @@ public class CustomListAdapter extends BaseAdapter {
         ListItem newsItem = (ListItem) listData.get(position);
         misdisenios.diseId.setText(newsItem.getDiseId());
         misdisenios.diseDescripcion.setText(newsItem.getDiseDescripcion());
-        misdisenios.diseProdID.setText(newsItem.getDiseProdID());
+    /*    misdisenios.diseProdID.setText(newsItem.getDiseProdID());
         misdisenios.diseClienteID.setText(newsItem.getDiseClienteID());
 
         misdisenios.diseImagen.setText(newsItem.getDiseImagen());
 
         if (misdisenios.diseFoto != null) {
             new ImageDownloaderTask(misdisenios.diseFoto).execute(newsItem.getDiseImagen());
-        }
+        }*/
         return convertView;
     }
 
     static class ViewDisenio {
         TextView diseId;
         TextView diseDescripcion;
-        TextView diseProdID;
+    /*    TextView diseProdID;
         TextView diseClienteID;
         TextView diseImagen;
         ImageView diseFoto;
-
+*/
 
     }
 

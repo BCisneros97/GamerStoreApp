@@ -89,6 +89,8 @@ public class ListarDiseniosActivity extends ListActivity {
                     for (int i=0; i<misdisenios.length();i++){
                         JSONObject c= misdisenios.getJSONObject(i);
 
+                        ListItem newsData = new ListItem();
+
                         String id= c.getString(TAG_DID);
                         String descripcion= c.getString(TAG_DESCRIPCION);
 
@@ -96,6 +98,14 @@ public class ListarDiseniosActivity extends ListActivity {
 
                         map.put(TAG_DID,id);
                         map.put(TAG_DESCRIPCION,descripcion);
+
+                        String ruta;
+
+                        newsData.setDiseId(id);
+                        newsData.setDiseDescripcion(descripcion);
+
+                        listMockData.add(newsData);
+
 
                         diseniosLista.add(map);
                     }
