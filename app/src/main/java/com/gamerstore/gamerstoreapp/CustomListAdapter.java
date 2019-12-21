@@ -42,11 +42,6 @@ public class CustomListAdapter extends BaseAdapter {
             misdisenios = new ViewDisenio();
             misdisenios.diseId 		    = (TextView) convertView.findViewById(R.id.id);
             misdisenios.diseDescripcion	= (TextView) convertView.findViewById(R.id.descripcion);
-            misdisenios.diseProdID	    = (TextView) convertView.findViewById(R.id.producto_id);
-            misdisenios.diseClienteID	= (TextView) convertView.findViewById(R.id.cliente_id);
-
-            misdisenios.diseImagen 	    = (TextView) convertView.findViewById(R.id.imagen);
-            misdisenios.diseFoto 	   = (ImageView) convertView.findViewById(R.id.foto);
 
             convertView.setTag(misdisenios);
 

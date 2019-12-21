@@ -25,7 +25,7 @@ public class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap> {
     protected Bitmap doInBackground(String... params) {
         return downloadBitmap(params[0]);
     }
-    ///mÃ©todo generado para atender downloadBitmap(params[0]);
+    ///metodo generado para atender downloadBitmap(params[0]);
     private Bitmap downloadBitmap(String url) {
         HttpURLConnection urlConnection = null;
         try {

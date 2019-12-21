@@ -1,16 +1,18 @@
 package com.gamerstore.gamerstoreapp;
 
-import android.app.LauncherActivity;
 import android.app.ListActivity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.ProgressDialog;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import org.apache.http.NameValuePair;
 import org.json.JSONArray;
@@ -29,9 +31,9 @@ public class ListarDiseniosActivity extends ListActivity {
     JSONParser jParser= new JSONParser();
     ArrayList<HashMap<String,String>> diseniosLista;
 
+    ArrayList<ListItem> listMockData = new ArrayList<ListItem>();
     //URL
     private static String url_all_disenios= "http://gamerstoreperu.000webhostapp.com/json/disenios/listar_disenios.php";
-
 
     //JSON Node nombres
     private static final String TAG_SUCCESS= "Completado";
@@ -76,7 +78,7 @@ public class ListarDiseniosActivity extends ListActivity {
 
         protected String doInBackground(String... args){
             List<NameValuePair> params= new ArrayList<NameValuePair>();
-            JSONObject json= jParser.makeHttpRequest(url_all_disenios,"GET",params);
+            JSONObject json = jParser.makeHttpRequest(url_all_disenios, "GET", params);
             Log.d("Todos los Diseños: ",json.toString());
 
             try {
@@ -106,15 +108,29 @@ public class ListarDiseniosActivity extends ListActivity {
             return null;
         }
 
-        /*protected void onPostExecute(String file_url){
+
+
+        protected void onPostExecute(String file_url){
             pDialog.dismiss();
 
             runOnUiThread(new Runnable() {
 
                 public void run() {
-                    ListAdapter adapter= new SimpleAdapter((ListarDiseniosActivity.this, diseniosLista,R.layout.))
+                    ListAdapter adapter= new SimpleAdapter(ListarDiseniosActivity.this, diseniosLista,R.layout.list_item,
+                            new String[]{
+                                    TAG_DID,
+                                    TAG_DESCRIPCION
+                            },new int[]{
+                                    R.id.id,
+                                    R.id.descripcion
+                    });
+                    setListAdapter(adapter);
+
+                    setContentView(R.layout.activity_listar_disenios);
+                    final ListView listView= (ListView) findViewById(android.R.id.list);
+                    listView.setAdapter(new CustomListAdapter(getBaseContext(),listMockData));
                 }
             });
-        }*/
+        }
     }
 }
